@@ -15,7 +15,7 @@ public abstract class MenuItem {
     }
 
     public MenuItem(String name, int price, String description) {
-        this(name, price, null, description);
+        this(name, price, 0, description);
     }
 
     public MenuItem(String name, int price, int stockQuantity) {
@@ -23,7 +23,7 @@ public abstract class MenuItem {
     }
 
     public MenuItem(String name, int price) {
-        this(name, price, null, null);
+        this(name, price, 0, null);
     }
 
     public void setStockQuantity(int stockQuantity) {
