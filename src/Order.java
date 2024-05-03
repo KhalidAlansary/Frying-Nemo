@@ -5,26 +5,22 @@ public class Order {
 
     public Order(int size) {
         items = new ArrayList<>(size);
-        for (int i = 0; i < size; i++) {
-            items.add(null);
-        }
+
+    }
+
+    public Order() {
+        items = new ArrayList<>();
     }
 
     public void addItem(MenuItem item) {
-        for (int i = 0; i < items.size(); i++) {
-            if (items.get(i) == null) {
-                items.set(i, item);
-                return;
-            }
-        }
-        System.out.println("Order is full. Cannot add more items.");
+        items.add(item);
     }
+
     public double checkTotal() {
         double total = 0;
         for (MenuItem item : items) {
-            if (item != null) {
-                total += item.getPrice();
-            }
+            // Assuming MenuItem has a method to get the price
+            total += item.getPrice();
         }
         return total;
     }
