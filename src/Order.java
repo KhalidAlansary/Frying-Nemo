@@ -19,7 +19,7 @@ public class Order {
     public double checkTotal() {
         double total = 0;
         for (MenuItem item : items) {
-            // Assuming MenuItem has a method to get the price
+
             total += item.getPrice();
         }
         return total;
