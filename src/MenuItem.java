@@ -1,17 +1,14 @@
 public abstract class MenuItem {
     public String name;
     public String description;
-    public int price;
+    private int price;
     private int stockQuantity;
 
     public MenuItem(String name, int price, int stockQuantity, String description) {
-        if (price < 0) {
-            throw new IllegalArgumentException("Price cannot be negative");
-        }
         this.name = name;
-        this.description = description;
-        this.price = price;
+        setPrice(price);
         this.stockQuantity = stockQuantity;
+        this.description = description;
     }
 
     public MenuItem(String name, int price, String description) {
@@ -24,6 +21,17 @@ public abstract class MenuItem {
 
     public MenuItem(String name, int price) {
         this(name, price, 0, null);
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        if (price < 0) {
+            throw new IllegalArgumentException("Price cannot be negative");
+        }
+        this.price = price;
     }
 
     public void setStockQuantity(int stockQuantity) {
