@@ -4,7 +4,7 @@ public abstract class MenuItem {
     public int price;
     private int stockQuantity;
 
-    public MenuItem(String name, int price, Integer stockQuantity, String description) {
+    public MenuItem(String name, int price, int stockQuantity, String description) {
         if (price < 0) {
             throw new IllegalArgumentException("Price cannot be negative");
         }
@@ -18,7 +18,7 @@ public abstract class MenuItem {
         this(name, price, null, description);
     }
 
-    public MenuItem(String name, int price, Integer stockQuantity) {
+    public MenuItem(String name, int price, int stockQuantity) {
         this(name, price, stockQuantity, null);
     }
 
