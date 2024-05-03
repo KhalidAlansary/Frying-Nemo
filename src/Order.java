@@ -16,7 +16,7 @@ public class Order {
         items.add(item);
     }
 
-    public double checkTotal() {
+    public int checkTotal() {
         int total = 0;
         for (MenuItem item : items) {
 
