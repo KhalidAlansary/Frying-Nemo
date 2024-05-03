@@ -1,8 +1,8 @@
 public class MainDish extends MenuItem {
     private int spicinessLevel;
 
-    public MainDish(String name, int price, int stockQuantity,String description, int spicinessLevel) {
-        super(name, price, stockQuantity,description);
+    public MainDish(String name, int price, int stockQuantity, String description, int spicinessLevel) {
+        super(name, price, stockQuantity, description);
         setSpicinessLevel(spicinessLevel);
     }
 
