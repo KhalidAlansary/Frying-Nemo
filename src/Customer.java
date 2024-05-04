@@ -22,7 +22,7 @@ public class Customer extends Person {
             System.out.println("Points left = " + points);
         }
         else {
-            throw new IllegalArgumentException();
+            System.out.println("INSUFFICIENT POINTS CAN'T COMPLETE ACTION ");
         }
 
     }
