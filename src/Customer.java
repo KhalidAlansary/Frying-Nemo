@@ -11,23 +11,19 @@ public class Customer extends Person {
     }
 
     public void addPoints(int points) {
-        if (points >= 0) {
-            this.points += points;
-        } else {
+        if (points < 0) {
             throw new IllegalArgumentException("Can't add negative points");
         }
-
+        this.points += points;
     }
 
     public void redeemPoints(int pointsToBeRedeemed) {
-        if (pointsToBeRedeemed <= points) {
-            this.points -= pointsToBeRedeemed;
-            double MonetaryValue = points * pointsMonetaryValue;
-            System.out.println("points redeemed with value " + MonetaryValue);
-            System.out.println("Points left = " + points);
-        } else {
-            System.out.println("INSUFFICIENT POINTS CAN'T COMPLETE ACTION ");
+        if (pointsToBeRedeemed > points) {
+            throw new IllegalArgumentException("Can't redeem more points than you have");
         }
-
+        this.points -= pointsToBeRedeemed;
+        double MonetaryValue = points * pointsMonetaryValue;
+        System.out.println("points redeemed with value " + MonetaryValue);
+        System.out.println("Points left = " + points);
     }
 }
