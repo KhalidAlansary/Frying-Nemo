@@ -1,5 +1,5 @@
 public class Customer extends Person {
-    private int points;
+    private int points=0;
     public final double pointsMonetaryValue = 0.01;
 
     public Customer(String email, String firstName, String lastName) {
@@ -10,8 +10,15 @@ public class Customer extends Person {
         return points;
     }
 
-    public void setPoints(int points) {
-        this.points = points;
+    public void addPoints(int points) {
+        if(points>=0){
+            this.points += points;
+        }
+        else{
+            throw new IllegalArgumentException("Can't add negative points");
+        }
+
+
     }
 
     public void redeem_points(int pointsToBeRedeemed) {
