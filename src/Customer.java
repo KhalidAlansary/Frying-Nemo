@@ -22,8 +22,5 @@ public class Customer extends Person {
             throw new IllegalArgumentException("Can't redeem more points than you have");
         }
         this.points -= pointsToBeRedeemed;
-        double MonetaryValue = points * pointsMonetaryValue;
-        System.out.println("points redeemed with value " + MonetaryValue);
-        System.out.println("Points left = " + points);
     }
 }
