@@ -21,7 +21,7 @@ public class Customer extends Person {
 
     }
 
-    public void redeem_points(int pointsToBeRedeemed) {
+    public void redeemPoints(int pointsToBeRedeemed) {
         if (pointsToBeRedeemed <= points) {
             this.points -= pointsToBeRedeemed;
             double MonetaryValue = points * pointsMonetaryValue;
