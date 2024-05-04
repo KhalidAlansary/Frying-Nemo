@@ -7,7 +7,7 @@ public abstract class MenuItem {
     public MenuItem(String name, int price, int stockQuantity, String description) {
         this.name = name;
         setPrice(price);
-        this.stockQuantity = stockQuantity;
+        setStockQuantity(stockQuantity);
         this.description = description;
     }
 
