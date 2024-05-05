@@ -17,10 +17,11 @@ public class Customer extends Person {
         this.points += points;
     }
 
-    public void redeemPoints(int pointsToBeRedeemed) {
+    public double redeemPoints(int pointsToBeRedeemed) {
         if (pointsToBeRedeemed > points) {
             throw new IllegalArgumentException("Can't redeem more points than you have");
         }
         this.points -= pointsToBeRedeemed;
+        return pointsToBeRedeemed * pointsMonetaryValue;
     }
 }
