@@ -7,18 +7,17 @@ public class StaffMember extends Person {
     public StaffMember(String email, String firstName, String lastName, Job job, int salary) {
         super(email, firstName, lastName);
         this.job = job;
+        setSalary(salary);
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        if (salary < 0) {
+            throw new IllegalArgumentException("Salary cannot be negative");
+        }
         this.salary = salary;
-    }
-
-    public StaffMember(String email, Job job, int salary) {
-        this(email, null, null, job, salary);
-    }
-
-    public StaffMember(String email, String firstName, String lastName, Job job) {
-        this(email, firstName, lastName, job, 0);
-    }
-
-    public StaffMember(String email, Job job) {
-        this(email, null, null, job, 0);
     }
 }

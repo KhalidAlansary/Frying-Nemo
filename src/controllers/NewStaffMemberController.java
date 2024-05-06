@@ -10,6 +10,7 @@ import entities.StaffMember;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TextField;
 
@@ -33,10 +34,16 @@ public class NewStaffMemberController implements Initializable {
 
     public void addStaffMember(ActionEvent event) throws IOException {
         // TODO: fix job
+        try {
         StaffMember staffMember = new StaffMember(emailTextField.getText(), firstNameTextField.getText(),
                 lastNameTextField.getText(), Job.CHEF, Integer.parseInt(salaryTextField.getText()));
         Restaurant.staffMembers.add(staffMember);
         SceneController sceneController = new SceneController();
         sceneController.switchToMainScene(event);
+        } catch (IllegalArgumentException iae) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setContentText(iae.getMessage());
+            alert.show();
+        }
     }
 }
