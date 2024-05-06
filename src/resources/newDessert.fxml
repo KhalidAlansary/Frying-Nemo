@@ -35,37 +35,13 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewDessertController">
     <children>
-        <MenuBar VBox.vgrow="NEVER">
-            <menus>
-                <Menu mnemonicParsing="false" text="Create New">
-                    <items>
-                        <MenuItem mnemonicParsing="false" text="Table" />
-                        <Menu mnemonicParsing="false" text="Person">
-                            <items>
-                                <MenuItem mnemonicParsing="false" text="Staff Member" />
-                                <MenuItem mnemonicParsing="false" text="Customer" />
-                            </items></Menu>
-                        <Menu mnemonicParsing="false" text="Menu Item">
-                            <items>
-                                <MenuItem mnemonicParsing="false" text="Main Dish" />
-                                <MenuItem mnemonicParsing="false" text="Dessert" />
-                            </items>
-                        </Menu>
-                        <MenuItem mnemonicParsing="false" text="Order" />
-                    </items>
-                </Menu>
-            </menus>
-        </MenuBar>
         <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
             <children>
                 <Label alignment="CENTER" layoutX="37.0" layoutY="23.0" style="&#10;" text="Frying Nemo" textAlignment="CENTER" wrapText="false">
@@ -73,12 +49,12 @@
                         <Font name="Berlin Sans FB Demi Bold" size="18.0" />
                     </font>
                 </Label>
-                <TextField layoutX="125.0" layoutY="153.0" />
+                <TextField fx:id="descriptionTextField" layoutX="125.0" layoutY="153.0" />
                 <Label layoutX="20.0" layoutY="157.0" text="Description" />
                 <Label layoutX="24.0" layoutY="210.0" text="Price" />
-                <TextField layoutX="125.0" layoutY="206.0" />
-                <Button layoutX="538.0" layoutY="278.0" mnemonicParsing="false" text="Add" />
-                <TextField layoutX="125.0" layoutY="99.0" />
+                <TextField fx:id="priceTextField" layoutX="125.0" layoutY="206.0" />
+                <Button fx:id="SubmitNewDessertButton" layoutX="538.0" layoutY="278.0" mnemonicParsing="false" onAction="#addDessert" text="Add" />
+                <TextField fx:id="itemNameTextField" layoutX="125.0" layoutY="99.0" />
                 <Label layoutX="22.0" layoutY="103.0" text="Item name" />
                 <ChoiceBox fx:id="sweetnessLevelChoiceBox" layoutX="125.0" layoutY="265.0" prefWidth="150.0" />
                 <Label fx:id="sweetnessLevelLabel" layoutX="21.0" layoutY="269.0" text="Sweetness Level" />
@@ -88,8 +64,8 @@
                         <Font name="System Bold" size="14.0" />
                     </font></Label>
                 <Label layoutX="332.0" layoutY="103.0" text="Image" />
-                <TextField layoutX="432.0" layoutY="153.0" />
-                <Button layoutX="432.0" layoutY="98.0" mnemonicParsing="false" text="Upload File" />
+                <TextField fx:id="stockQuantityTextField" layoutX="432.0" layoutY="153.0" />
+                <Button fx:id="imageUploadButton" layoutX="432.0" layoutY="98.0" mnemonicParsing="false" text="Upload File" />
             </children>
         </AnchorPane>
     </children>
