@@ -32,6 +32,7 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
@@ -60,7 +61,6 @@
                         <MenuItem mnemonicParsing="false" onAction="#switchToNewDessertScene" text="Dessert" />
                      </items>
                   </Menu>
-            <MenuItem mnemonicParsing="false" onAction="#switchToNewOrderScene" text="Order" />
           </items>
         </Menu>
       </menus>
@@ -87,6 +87,7 @@
                   <Font size="20.0" />
                </font>
             </Label>
+            <Button layoutX="255.0" layoutY="262.0" mnemonicParsing="false" onAction="#switchToNewOrderScene" prefHeight="77.0" prefWidth="130.0" text="Order" />
       </children>
     </AnchorPane>
   </children>
