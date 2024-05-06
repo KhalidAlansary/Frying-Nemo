@@ -1,26 +1,30 @@
+import java.io.File;
+
 public abstract class MenuItem {
     public String name;
     public String description;
     private int price;
     private int stockQuantity;
+    private File image;
 
-    public MenuItem(String name, int price, int stockQuantity, String description) {
+    public MenuItem(String name, int price, int stockQuantity, String description, File image) {
         this.name = name;
         setPrice(price);
         setStockQuantity(stockQuantity);
+        setImage(image);
         this.description = description;
     }
 
     public MenuItem(String name, int price, String description) {
-        this(name, price, 0, description);
+        this(name, price, 0, description, null);
     }
 
     public MenuItem(String name, int price, int stockQuantity) {
-        this(name, price, stockQuantity, null);
+        this(name, price, stockQuantity, null, null);
     }
 
     public MenuItem(String name, int price) {
-        this(name, price, 0, null);
+        this(name, price, 0, null, null);
     }
 
     public int getPrice() {
@@ -43,6 +47,14 @@ public abstract class MenuItem {
 
     public int getStockQuantity() {
         return stockQuantity;
+    }
+
+    public File getImage() {
+        return image;
+    }
+
+    public void setImage(File image) {
+        this.image = image;
     }
 
     public boolean isInStock() {
