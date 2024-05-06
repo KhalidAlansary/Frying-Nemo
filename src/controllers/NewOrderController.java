@@ -1,8 +1,6 @@
 package controllers;
 
-import entities.Customer;
-import entities.MenuItem;
-import entities.Restaurant;
+import entities.*;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -17,8 +15,9 @@ public class NewOrderController implements Initializable {
     @FXML
     ChoiceBox<Customer> customerChoiceBox;
     @FXML
-    ListView<MenuItem> menuItemListView;
-
+    ChoiceBox<MainDish> mainDishChoiceBox;
+    @FXML
+    ChoiceBox<Dessert> dessertChoiceBox ;
     public void addOrder(ActionEvent event) {
 
     }
@@ -26,6 +25,7 @@ public class NewOrderController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         customerChoiceBox.setItems(FXCollections.observableArrayList(Restaurant.customers));
-
+        mainDishChoiceBox.setItems(FXCollections.observableArrayList(Restaurant.mainDishes));
+        dessertChoiceBox.setItems(FXCollections.observableArrayList(Restaurant.desserts));
     }
 }
