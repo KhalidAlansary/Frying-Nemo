@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 import entities.Job;
 import entities.Restaurant;
 import entities.StaffMember;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -29,17 +30,16 @@ public class NewStaffMemberController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        jobChoiceBox.getItems().addAll(Job.values());
+        jobChoiceBox.setItems(FXCollections.observableArrayList(Job.values()));
     }
 
     public void addStaffMember(ActionEvent event) throws IOException {
-        // TODO: fix job
         try {
-        StaffMember staffMember = new StaffMember(emailTextField.getText(), firstNameTextField.getText(),
-                lastNameTextField.getText(), Job.CHEF, Integer.parseInt(salaryTextField.getText()));
-        Restaurant.staffMembers.add(staffMember);
-        SceneController sceneController = new SceneController();
-        sceneController.switchToMainScene(event);
+            StaffMember staffMember = new StaffMember(emailTextField.getText(), firstNameTextField.getText(),
+                    lastNameTextField.getText(), jobChoiceBox.getValue(), Integer.parseInt(salaryTextField.getText()));
+            Restaurant.staffMembers.add(staffMember);
+            SceneController sceneController = new SceneController();
+            sceneController.switchToMainScene(event);
         } catch (IllegalArgumentException iae) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(iae.getMessage());
