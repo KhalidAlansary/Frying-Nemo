@@ -48,19 +48,19 @@
       <menus>
         <Menu mnemonicParsing="false" text="Create New">
           <items>
-            <MenuItem mnemonicParsing="false" text="Table" />
+            <MenuItem mnemonicParsing="false" onAction="#switchToNewTableScene" text="Table" />
             <Menu mnemonicParsing="false" text="Person">
                      <items>
                   <MenuItem mnemonicParsing="false" onAction="#switchToNewStaffMemberScene" text="Staff Member" />
-                        <MenuItem mnemonicParsing="false" text="Customer" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToNewCustomerScene" text="Customer" />
                      </items></Menu>
                   <Menu mnemonicParsing="false" text="Menu Item">
                      <items>
                         <MenuItem mnemonicParsing="false" onAction="#switchToNewMainDishScene" text="Main Dish" />
-                        <MenuItem mnemonicParsing="false" text="Dessert" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToNewDessertScene" text="Dessert" />
                      </items>
                   </Menu>
-            <MenuItem mnemonicParsing="false" text="Order" />
+            <MenuItem mnemonicParsing="false" onAction="#switchToNewOrderScene" text="Order" />
           </items>
         </Menu>
       </menus>
