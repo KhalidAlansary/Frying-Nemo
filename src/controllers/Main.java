@@ -42,7 +42,7 @@ public class Main extends Application {
         Restaurant.mainDishes.add(new MainDish("Squid", 191, 1, "Say my name", 3));
         // Desserts
         Restaurant.desserts.add(new Dessert("Tiramisu", 10, 1, "Delecious clownfish", 3));
-        Restaurant.desserts.add(new Dessert("Creme Brule", 10, 1, "Delecious clownfish", 3));
+        Restaurant.desserts.add(new Dessert("Crème brûlée", 10, 1, "Delecious clownfish", 3));
         Restaurant.desserts.add(new Dessert("Molten Cake", 10, 1, "Delecious clownfish", 3));
 
     }
