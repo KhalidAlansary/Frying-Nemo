@@ -13,6 +13,14 @@ public class SceneController {
     private Scene scene;
     private Parent root;
 
+    public void switchToNewTableScene(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("/resources/newTable.fxml"));
+        stage = Main.primaryStage; // **Get the Stage from Main class**
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
     public void switchToNewStaffMemberScene(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("/resources/newStaffMember.fxml"));
         stage = Main.primaryStage; // **Get the Stage from Main class**
@@ -21,11 +29,36 @@ public class SceneController {
         stage.show();
     }
 
-    public void switchToMainDishScene(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("/resources/MainDish.fxml"));
+    public void switchToNewCustomerScene(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("/resources/newCustomer.fxml"));
         stage = Main.primaryStage; // **Get the Stage from Main class**
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
+
+    public void switchToMainDishScene(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("/resources/newMainDish.fxml"));
+        stage = Main.primaryStage; // **Get the Stage from Main class**
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchToDessertScene(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("/resources/newDessert.fxml"));
+        stage = Main.primaryStage; // **Get the Stage from Main class**
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchToNewOrderScene(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("/resources/newOrder.fxml"));
+        stage = Main.primaryStage; // **Get the Stage from Main class**
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
 }
