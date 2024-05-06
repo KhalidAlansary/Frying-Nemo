@@ -13,6 +13,14 @@ public class SceneController {
     private Scene scene;
     private Parent root;
 
+    public void switchToMainScene(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("/resources/Main.fxml"));
+        stage = Main.primaryStage; // **Get the Stage from Main class**
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
     public void switchToNewTableScene(ActionEvent event) throws IOException {
         root = FXMLLoader.load(getClass().getResource("/resources/newTable.fxml"));
         stage = Main.primaryStage; // **Get the Stage from Main class**
