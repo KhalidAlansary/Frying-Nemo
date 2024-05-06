@@ -54,7 +54,7 @@
                      </items></Menu>
                   <Menu mnemonicParsing="false" text="Menu Item">
                      <items>
-                        <MenuItem mnemonicParsing="false" text="Main Dish" />
+                        <MenuItem mnemonicParsing="false" onAction="#switchToNewMainDishScene" text="Main Dish" />
                         <MenuItem mnemonicParsing="false" text="Dessert" />
                      </items>
                   </Menu>

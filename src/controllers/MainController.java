@@ -9,4 +9,11 @@ public class MainController {
         SceneController sceneController = new SceneController();
         sceneController.switchToNewStaffMemberScene(event);
     }
+
+    public void switchToNewMainDishScene(ActionEvent event) throws IOException {
+        SceneController sceneController = new SceneController();
+        sceneController.switchToMainDishScene(event);
+    }
+
+
 }
