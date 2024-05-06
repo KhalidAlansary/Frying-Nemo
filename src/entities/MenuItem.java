@@ -1,3 +1,5 @@
+package entities;
+
 import java.io.File;
 
 public abstract class MenuItem {

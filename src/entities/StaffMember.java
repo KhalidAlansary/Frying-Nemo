@@ -1,3 +1,5 @@
+package entities;
+
 public class StaffMember extends Person {
     int salary;
     Job job;

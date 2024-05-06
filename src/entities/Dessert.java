@@ -1,3 +1,5 @@
+package entities;
+
 public class Dessert extends MenuItem {
     private int sweetnessLevel;
 
