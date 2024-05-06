@@ -1,5 +1,5 @@
 package controllers;
 
-public class newStaffMemberController {
+public class NewStaffMemberController {
 
 }
