@@ -45,7 +45,7 @@
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
   <children>
-    <MenuBar VBox.vgrow="NEVER">
+    <MenuBar prefHeight="33.0" prefWidth="640.0" VBox.vgrow="NEVER">
       <menus>
         <Menu mnemonicParsing="false" text="Create New">
           <items>
@@ -65,29 +65,32 @@
         </Menu>
       </menus>
     </MenuBar>
-    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="366.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="184.0" layoutY="172.0" style="&#10;" text="Frying Nemo" textAlignment="CENTER" wrapText="false">
+        <Label alignment="CENTER" layoutX="236.0" layoutY="44.0" style="&#10;" text="Frying Nemo" textAlignment="CENTER" wrapText="false">
           <font>
-            <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+            <Font name="Berlin Sans FB Demi Bold" size="64.0" />
           </font>
         </Label>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="163.0" fitWidth="240.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@nemo.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="419.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="180.0" fitWidth="232.0" layoutX="408.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@fried.jpeg" />
                </image>
             </ImageView>
-            <Label fx:id="messageLabel" alignment="CENTER" layoutX="275.0" layoutY="247.0" text="Label" textAlignment="CENTER" textFill="#318d00" visible="false">
+            <Label fx:id="messageLabel" alignment="CENTER" layoutX="24.0" layoutY="192.0" prefHeight="66.0" prefWidth="371.0" text="Label" textAlignment="CENTER" textFill="#318d00" visible="false">
                <font>
                   <Font size="20.0" />
                </font>
             </Label>
-            <Button layoutX="255.0" layoutY="262.0" mnemonicParsing="false" onAction="#switchToNewOrderScene" prefHeight="77.0" prefWidth="130.0" text="Order" />
+            <Button layoutX="146.0" layoutY="262.0" mnemonicParsing="false" onAction="#switchToNewOrderScene" prefHeight="78.0" prefWidth="194.0" text="Order">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Button>
       </children>
     </AnchorPane>
   </children>
