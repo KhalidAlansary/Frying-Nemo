@@ -1,3 +1,5 @@
+package entities;
+
 public class Customer extends Person {
     private int points = 0;
     public final double pointsMonetaryValue = 0.01;

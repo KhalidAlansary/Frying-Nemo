@@ -1,3 +1,5 @@
+package entities;
+
 public abstract class MenuItem {
     public String name;
     public String description;
