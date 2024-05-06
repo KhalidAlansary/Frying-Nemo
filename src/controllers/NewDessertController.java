@@ -14,9 +14,6 @@ import javafx.scene.control.*;
 public class NewDessertController implements Initializable {
 
     @FXML
-    private Label sweetnessLevelLabel;
-
-    @FXML
     private ChoiceBox<String> sweetnessLevelChoiceBox;
     @FXML
     TextField itemNameTextField;
@@ -49,5 +46,4 @@ public class NewDessertController implements Initializable {
             alert.show();
         }
     }
-
 }

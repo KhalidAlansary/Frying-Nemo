@@ -14,9 +14,6 @@ import javafx.scene.control.*;
 public class NewMainDishController implements Initializable {
 
     @FXML
-    private Label spicinessLevelLabel;
-
-    @FXML
     private ChoiceBox<String> SpicinessLevelChoiceBox;
     @FXML
     TextField itemNameTextField;
@@ -49,6 +46,4 @@ public class NewMainDishController implements Initializable {
             alert.show();
         }
     }
-
-
 }
