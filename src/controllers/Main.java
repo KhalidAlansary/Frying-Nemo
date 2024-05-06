@@ -7,8 +7,6 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.image.Image;
 
-import java.awt.*;
-
 public class Main extends Application {
     public static Stage primaryStage; // **Declare static Stage**
 
