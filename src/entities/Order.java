@@ -15,10 +15,9 @@ public class Order {
 
     private Customer customer;
 
-
     public Order(Customer custumer) {
         items = new ArrayList<>();
-        this.customer=custumer;
+        this.customer = custumer;
     }
 
     public void addItem(MenuItem item) {

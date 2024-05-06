@@ -6,6 +6,7 @@ public class Restaurant {
     private int noOfTables;
     private int noOfStaff;
     public static ArrayList<StaffMember> staffMembers = new ArrayList<StaffMember>();
+    public static ArrayList<Customer> customers = new ArrayList<Customer>();
     public static ArrayList<MainDish> mainDishes = new ArrayList<MainDish>();
     public static ArrayList<Dessert> desserts = new ArrayList<Dessert>();
 

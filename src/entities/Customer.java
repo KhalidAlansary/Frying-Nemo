@@ -8,6 +8,11 @@ public class Customer extends Person {
         super(email, firstName, lastName);
     }
 
+    @Override
+    public String toString() {
+        return firstName + lastName;
+    }
+
     public int getPoints() {
         return points;
     }
