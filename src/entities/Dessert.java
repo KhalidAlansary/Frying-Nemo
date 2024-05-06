@@ -10,18 +10,6 @@ public class Dessert extends MenuItem {
         setSweetnessLevel(sweetnessLevel);
     }
 
-    public Dessert(String name, int price, String description, int sweetnessLevel) {
-        this(name, price, 0, description, sweetnessLevel, null);
-    }
-
-    public Dessert(String name, int price, int stockQuantity, int sweetnessLevel) {
-        this(name, price, stockQuantity, null, sweetnessLevel, null);
-    }
-
-    public Dessert(String name, int price, int sweetnessLevel) {
-        this(name, price, 0, null, sweetnessLevel, null);
-    }
-
     public int getSweetnessLevel() {
         return sweetnessLevel;
     }

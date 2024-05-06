@@ -17,18 +17,6 @@ public abstract class MenuItem {
         this.description = description;
     }
 
-    public MenuItem(String name, int price, String description) {
-        this(name, price, 0, description, null);
-    }
-
-    public MenuItem(String name, int price, int stockQuantity) {
-        this(name, price, stockQuantity, null, null);
-    }
-
-    public MenuItem(String name, int price) {
-        this(name, price, 0, null, null);
-    }
-
     public int getPrice() {
         return price;
     }
