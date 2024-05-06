@@ -39,7 +39,7 @@ public class NewStaffMemberController implements Initializable {
                     lastNameTextField.getText(), jobChoiceBox.getValue(), Integer.parseInt(salaryTextField.getText()));
             Restaurant.staffMembers.add(staffMember);
             SceneController sceneController = new SceneController();
-            sceneController.switchToMainScene(event);
+            sceneController.switchToMainScene(event, "Staff member added successfully!");
         } catch (IllegalArgumentException iae) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setContentText(iae.getMessage());

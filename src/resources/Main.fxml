@@ -82,6 +82,11 @@
                   <Image url="@fried.jpeg" />
                </image>
             </ImageView>
+            <Label fx:id="messageLabel" alignment="CENTER" layoutX="275.0" layoutY="247.0" text="Label" textAlignment="CENTER" textFill="#318d00" visible="false">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
       </children>
     </AnchorPane>
   </children>

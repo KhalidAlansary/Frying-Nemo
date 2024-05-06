@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 public class SceneController {
@@ -13,11 +14,14 @@ public class SceneController {
     private Scene scene;
     private Parent root;
 
-    public void switchToMainScene(ActionEvent event) throws IOException {
+    public void switchToMainScene(ActionEvent event, String message) throws IOException {
         root = FXMLLoader.load(getClass().getResource("/resources/Main.fxml"));
         stage = Main.primaryStage; // **Get the Stage from Main class**
         scene = new Scene(root);
         stage.setScene(scene);
+        Label messageLabel = (Label) root.lookup("#messageLabel");
+        messageLabel.setVisible(true);
+        messageLabel.setText(message);
         stage.show();
     }
 
