@@ -32,10 +32,13 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -65,11 +68,23 @@
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+        <Label alignment="CENTER" layoutX="269.0" layoutY="38.0" style="&#10;" text="Frying Nemo" textAlignment="CENTER" wrapText="false">
           <font>
             <Font size="18.0" />
           </font>
         </Label>
+            <TextField layoutX="106.0" layoutY="144.0" />
+            <Label layoutX="21.0" layoutY="148.0" text="First Name" />
+            <Label layoutX="21.0" layoutY="179.0" text="Last Name" />
+            <TextField layoutX="105.0" layoutY="175.0" />
+            <Button layoutX="294.0" layoutY="291.0" mnemonicParsing="false" text="Submit" />
+            <TextField layoutX="105.0" layoutY="107.0" />
+            <Label layoutX="36.0" layoutY="111.0" text="Email" />
+            <ChoiceBox layoutX="413.0" layoutY="107.0" prefWidth="150.0" />
+            <Label layoutX="358.0" layoutY="111.0" text="Job" />
+            <TextField layoutX="414.0" layoutY="157.0" />
+            <Label layoutX="358.0" layoutY="161.0" text="Salary" />
+            <Label layoutX="254.0" layoutY="82.0" text="Create new staff member" />
       </children>
     </AnchorPane>
   </children>
