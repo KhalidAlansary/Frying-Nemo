@@ -7,13 +7,11 @@ public abstract class MenuItem {
     public String description;
     private int price;
     private int stockQuantity;
-    private File image;
 
-    public MenuItem(String name, int price, int stockQuantity, String description, File image) {
+    public MenuItem(String name, int price, int stockQuantity, String description) {
         this.name = name;
         setPrice(price);
         setStockQuantity(stockQuantity);
-        setImage(image);
         this.description = description;
     }
 
@@ -37,14 +35,6 @@ public abstract class MenuItem {
 
     public int getStockQuantity() {
         return stockQuantity;
-    }
-
-    public File getImage() {
-        return image;
-    }
-
-    public void setImage(File image) {
-        this.image = image;
     }
 
     public boolean isInStock() {

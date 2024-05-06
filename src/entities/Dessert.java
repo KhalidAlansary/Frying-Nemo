@@ -5,8 +5,8 @@ import java.io.File;
 public class Dessert extends MenuItem {
     private int sweetnessLevel;
 
-    public Dessert(String name, int price, int stockQuantity, String description, int sweetnessLevel, File image) {
-        super(name, price, stockQuantity, description, image);
+    public Dessert(String name, int price, int stockQuantity, String description, int sweetnessLevel) {
+        super(name, price, stockQuantity, description);
         setSweetnessLevel(sweetnessLevel);
     }
 

@@ -36,7 +36,7 @@ public class NewDessertController implements Initializable {
     public void addDessert(ActionEvent event) throws IOException {
         try {
             Dessert dessert = new Dessert(itemNameTextField.getText(), Integer.parseInt(priceTextField.getText()),
-                    Integer.parseInt(stockQuantityTextField.getText()), descriptionTextField.getText(), Integer.parseInt(sweetnessLevelChoiceBox.getValue()), null);
+                    Integer.parseInt(stockQuantityTextField.getText()), descriptionTextField.getText(), Integer.parseInt(sweetnessLevelChoiceBox.getValue()));
             Restaurant.desserts.add(dessert);
             SceneController sceneController = new SceneController();
             sceneController.switchToMainScene(event, "Dessert added successfully!");

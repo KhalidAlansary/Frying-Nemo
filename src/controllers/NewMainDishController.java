@@ -36,7 +36,7 @@ public class NewMainDishController implements Initializable {
     public void addMainDish(ActionEvent event) throws IOException {
         try {
             MainDish mainDish = new MainDish(itemNameTextField.getText(), Integer.parseInt(priceTextField.getText()),
-                    Integer.parseInt(stockQuantityTextField.getText()), descriptionTextField.getText(), Integer.parseInt(SpicinessLevelChoiceBox.getValue()), null);
+                    Integer.parseInt(stockQuantityTextField.getText()), descriptionTextField.getText(), Integer.parseInt(SpicinessLevelChoiceBox.getValue()));
             Restaurant.mainDishes.add(mainDish);
             SceneController sceneController = new SceneController();
             sceneController.switchToMainScene(event, "Main dish added successfully!");

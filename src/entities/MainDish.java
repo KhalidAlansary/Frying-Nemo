@@ -5,8 +5,8 @@ import java.io.File;
 public class MainDish extends MenuItem {
     private int spicinessLevel;
 
-    public MainDish(String name, int price, int stockQuantity, String description, int spicinessLevel, File image) {
-        super(name, price, stockQuantity, description, image);
+    public MainDish(String name, int price, int stockQuantity, String description, int spicinessLevel) {
+        super(name, price, stockQuantity, description);
         setSpicinessLevel(spicinessLevel);
     }
 
