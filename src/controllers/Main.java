@@ -1,6 +1,8 @@
 package controllers;
 
 import entities.Customer;
+import entities.Dessert;
+import entities.MainDish;
 import entities.Restaurant;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -30,8 +32,18 @@ public class Main extends Application {
     }
 
     public static void initialize() {
+        // Customers
         Restaurant.customers.add(new Customer("harry@hogwarts.edu", "Harry", "Potter"));
         Restaurant.customers.add(new Customer("ron@hogwarts.edu", "Ron", "Weasley"));
         Restaurant.customers.add(new Customer("hermione@hogwarts.edu", "Hermione", "Granger"));
+        // Main Dishes
+        Restaurant.mainDishes.add(new MainDish("Nemo", 10, 1, "Delecious clownfish", 3));
+        Restaurant.mainDishes.add(new MainDish("Dori", 69, 1, "you may forget a lot", 3));
+        Restaurant.mainDishes.add(new MainDish("Squid", 191, 1, "Say my name", 3));
+        // Desserts
+        Restaurant.desserts.add(new Dessert("Tiramisu", 10, 1, "Delecious clownfish", 3));
+        Restaurant.desserts.add(new Dessert("Creme Brule", 10, 1, "Delecious clownfish", 3));
+        Restaurant.desserts.add(new Dessert("Molten Cake", 10, 1, "Delecious clownfish", 3));
+
     }
 }
