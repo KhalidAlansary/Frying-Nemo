@@ -55,7 +55,7 @@
                 <Button fx:id="createButton" layoutX="294.0" layoutY="291.0" mnemonicParsing="false" onAction="#addCustomer" text="Create" />
                 <TextField fx:id="emailTextField" layoutX="105.0" layoutY="116.0" promptText="youremail@example.com" />
                 <Label layoutX="35.0" layoutY="120.0" text="Email" />
-                <Label layoutX="242.0" layoutY="65.0" text="Create new staff member">
+                <Label layoutX="250.0" layoutY="63.0" text="Create new customer">
                     <font>
                         <Font name="System Bold" size="14.0" />
                     </font></Label>
