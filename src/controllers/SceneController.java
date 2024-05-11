@@ -73,4 +73,12 @@ public class SceneController {
         stage.show();
     }
 
+    public void switchToReserveScene(ActionEvent event) throws IOException {
+        root = FXMLLoader.load(getClass().getResource("/resources/Reserve.fxml"));
+        stage = Main.primaryStage; // **Get the Stage from Main class**
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
 }
