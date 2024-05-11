@@ -1,9 +1,6 @@
 package controllers;
 
-import entities.Customer;
-import entities.Dessert;
-import entities.MainDish;
-import entities.Restaurant;
+import entities.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -44,6 +41,10 @@ public class Main extends Application {
         Restaurant.desserts.add(new Dessert("Tiramisu", 10, 1, "Delecious clownfish", 3));
         Restaurant.desserts.add(new Dessert("Crème brûlée", 10, 1, "Delecious clownfish", 3));
         Restaurant.desserts.add(new Dessert("Molten Cake", 10, 1, "Delecious clownfish", 3));
+        // Tables
+        Restaurant.tables.add(new Table(7));
+        Restaurant.tables.add(new Table(2));
+        Restaurant.tables.add(new Table(4));
 
     }
 }
