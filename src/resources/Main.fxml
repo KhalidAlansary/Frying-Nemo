@@ -72,7 +72,7 @@
             <Font name="Berlin Sans FB Demi Bold" size="64.0" />
           </font>
         </Label>
-            <ImageView fitHeight="163.0" fitWidth="240.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="127.0" fitWidth="208.0" layoutX="24.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@nemo.png" />
                </image>
@@ -87,10 +87,15 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Button layoutX="146.0" layoutY="262.0" mnemonicParsing="false" onAction="#switchToNewOrderScene" prefHeight="78.0" prefWidth="194.0" text="Order">
+            <Button layoutX="139.0" layoutY="274.0" mnemonicParsing="false" onAction="#switchToNewOrderScene" prefHeight="66.0" prefWidth="194.0" text="Order">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font></Button>
+            <Button layoutX="139.0" layoutY="188.0" mnemonicParsing="false" onAction="#switchToReserveScene" prefHeight="66.0" prefWidth="194.0" text="Reserve">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
       </children>
     </AnchorPane>
   </children>

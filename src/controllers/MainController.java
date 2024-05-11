@@ -36,4 +36,10 @@ public class MainController {
         sceneController.switchToNewOrderScene(event);
     }
 
+    public void switchToReserveScene(ActionEvent event) throws IOException {
+        SceneController sceneController = new SceneController();
+        sceneController.switchToReserveScene(event);
+    }
+
+
 }
