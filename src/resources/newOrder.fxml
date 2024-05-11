@@ -32,6 +32,7 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -42,12 +43,12 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="14.0" layoutY="22.0" style="&#10;" text="Customer" textAlignment="CENTER" textFill="#700f0f" wrapText="false">
+        <Label alignment="CENTER" layoutX="22.0" layoutY="34.0" style="&#10;" text="Customer" textAlignment="CENTER" textFill="#700f0f" wrapText="false">
           <font>
             <Font name="Cambria Bold" size="26.0" />
           </font>
         </Label>
-            <ChoiceBox fx:id="customerChoiceBox" layoutX="21.0" layoutY="63.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="customerChoiceBox" layoutX="21.0" layoutY="81.0" prefWidth="150.0" />
             <Label layoutX="28.0" layoutY="122.0" text="Main Dish">
                <font>
                   <Font name="Cambria" size="24.0" />
@@ -60,6 +61,26 @@
                   <Font name="Cambria" size="22.0" />
                </font>
             </Label>
+            <Label layoutX="414.0" layoutY="80.0" text="Total:">
+               <font>
+                  <Font name="System Italic" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="total" layoutX="471.0" layoutY="81.0" prefHeight="28.0" prefWidth="46.0" text="-----">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button layoutX="437.0" layoutY="124.0" mnemonicParsing="false" onAction="#getTotal" text="Get Total">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="396.0" layoutY="253.0" mnemonicParsing="false" onAction="#makeOrder" prefHeight="49.0" prefWidth="150.0" text="Make Order">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
       </children>
     </AnchorPane>
   </children>
