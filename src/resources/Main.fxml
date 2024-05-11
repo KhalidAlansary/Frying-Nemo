@@ -87,11 +87,11 @@
                   <Font size="20.0" />
                </font>
             </Label>
-            <Button layoutX="139.0" layoutY="274.0" mnemonicParsing="false" onAction="#switchToNewOrderScene" prefHeight="66.0" prefWidth="194.0" text="Order">
+            <Button layoutX="17.0" layoutY="272.0" mnemonicParsing="false" onAction="#switchToNewOrderScene" prefHeight="55.0" prefWidth="157.0" text="Order">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font></Button>
-            <Button layoutX="139.0" layoutY="188.0" mnemonicParsing="false" onAction="#switchToReserveScene" prefHeight="66.0" prefWidth="194.0" text="Reserve">
+            <Button layoutX="204.0" layoutY="272.0" mnemonicParsing="false" onAction="#switchToReserveScene" prefHeight="55.0" prefWidth="158.0" text="Reserve">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
