@@ -2,7 +2,6 @@ package controllers;
 
 import entities.Customer;
 import entities.Restaurant;
-import entities.Customer;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;

@@ -1,7 +1,5 @@
 package entities;
 
-import java.io.File;
-
 public class Dessert extends MenuItem {
     private int sweetnessLevel;
 

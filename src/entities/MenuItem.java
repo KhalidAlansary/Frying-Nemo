@@ -1,7 +1,5 @@
 package entities;
 
-import java.io.File;
-
 public abstract class MenuItem {
     public String name;
     public String description;

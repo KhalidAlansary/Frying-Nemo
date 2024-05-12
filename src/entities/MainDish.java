@@ -1,7 +1,5 @@
 package entities;
 
-import java.io.File;
-
 public class MainDish extends MenuItem {
     private int spicinessLevel;
 
