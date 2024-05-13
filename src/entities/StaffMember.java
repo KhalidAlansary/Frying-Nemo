@@ -1,8 +1,8 @@
 package entities;
 
 public class StaffMember extends Person {
-    int salary;
-    Job job;
+    private int salary;
+    public Job job;
 
     public StaffMember(String email, String firstName, String lastName, Job job, int salary) {
         super(email, firstName, lastName);
