@@ -2,7 +2,7 @@ package entities;
 
 public class Customer extends Person {
     private int points = 0;
-    public final double pointsMonetaryValue = 0.01;
+    public static final double POINTS_MONETARY_VALUE = 0.01;
 
     public Customer(String email, String firstName, String lastName) {
         super(email, firstName, lastName);
@@ -29,6 +29,6 @@ public class Customer extends Person {
             throw new IllegalArgumentException("Can't redeem more points than you have");
         }
         this.points -= pointsToBeRedeemed;
-        return pointsToBeRedeemed * pointsMonetaryValue;
+        return pointsToBeRedeemed * POINTS_MONETARY_VALUE;
     }
 }
