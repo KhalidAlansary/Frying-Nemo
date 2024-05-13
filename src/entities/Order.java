@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Order {
     private ArrayList<MenuItem> items;
+    private Customer customer;
 
     public Customer getCustomer() {
         return customer;
@@ -12,8 +13,6 @@ public class Order {
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
-
-    private Customer customer;
 
     public Order(Customer custumer) {
         items = new ArrayList<>();
@@ -27,7 +26,6 @@ public class Order {
     public int checkTotal() {
         int total = 0;
         for (MenuItem item : items) {
-
             total += item.getPrice();
         }
         return total;
