@@ -35,26 +35,44 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewTableController">
     <children>
-        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #C3B1E1;" VBox.vgrow="ALWAYS">
             <children>
                 <Label alignment="CENTER" layoutX="35.0" layoutY="24.0" style="&#10;" text="Frying Nemo" textAlignment="CENTER" wrapText="false">
                     <font>
                         <Font name="Berlin Sans FB Demi Bold" size="18.0" />
                     </font>
                 </Label>
-                <TextField fx:id="capacityTextField" layoutX="105.0" layoutY="166.0" />
-                <Label layoutX="21.0" layoutY="170.0" text="Capacity" />
-                <Button fx:id="createButton" layoutX="294.0" layoutY="291.0" mnemonicParsing="false" onAction="#addTable" text="Create" />
+                <TextField fx:id="capacityTextField" layoutX="228.0" layoutY="163.0" prefHeight="30.0" prefWidth="194.0" />
+                <Label layoutX="138.0" layoutY="169.0" text="Capacity">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Label>
+                <Button fx:id="createButton" layoutX="277.0" layoutY="290.0" mnemonicParsing="false" onAction="#addTable" prefHeight="42.0" prefWidth="82.0" text="Create">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
                 <Label layoutX="263.0" layoutY="65.0" text="Create new table">
                     <font>
                         <Font name="System Bold" size="14.0" />
                     </font></Label>
+            <Label layoutX="138.0" layoutY="15.0" text="®">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="18.0" fitWidth="28.0" layoutX="8.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@nemo.png" />
+               </image>
+            </ImageView>
             </children>
         </AnchorPane>
     </children>

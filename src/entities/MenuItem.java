@@ -4,7 +4,7 @@ public abstract class MenuItem {
     public String name;
     public String description;
     private int price;
-    private int stockQuantity;
+    private static int stockQuantity;
 
     public MenuItem(String name, int price, int stockQuantity, String description) {
         this.name = name;
@@ -31,7 +31,7 @@ public abstract class MenuItem {
         this.stockQuantity = stockQuantity;
     }
 
-    public int getStockQuantity() {
+    public static int getStockQuantity() {
         return stockQuantity;
     }
 

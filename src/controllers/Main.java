@@ -5,6 +5,10 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.scene.image.Image;
 
@@ -20,6 +24,8 @@ public class Main extends Application {
         primaryStage.setTitle("Frying Nemo Restaurant");
         Image image = new Image("/resources/nemo.png");
         primaryStage.getIcons().add(image);
+        Color customColor = Color.rgb(195, 177, 225);
+        ((Pane) root).setBackground(new Background(new BackgroundFill(customColor, null, null)));
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
@@ -34,13 +40,13 @@ public class Main extends Application {
         Restaurant.customers.add(new Customer("ron@hogwarts.edu", "Ron", "Weasley"));
         Restaurant.customers.add(new Customer("hermione@hogwarts.edu", "Hermione", "Granger"));
         // Main Dishes
-        Restaurant.mainDishes.add(new MainDish("Nemo", 10, 1, "Delecious clownfish", 3));
+        Restaurant.mainDishes.add(new MainDish("Nemo", 10, 1, "Delicious clownfish", 3));
         Restaurant.mainDishes.add(new MainDish("Dori", 69, 1, "you may forget a lot", 3));
         Restaurant.mainDishes.add(new MainDish("Squid", 191, 1, "Say my name", 3));
         // Desserts
-        Restaurant.desserts.add(new Dessert("Tiramisu", 10, 1, "Delecious clownfish", 3));
-        Restaurant.desserts.add(new Dessert("Crème brûlée", 10, 1, "Delecious clownfish", 3));
-        Restaurant.desserts.add(new Dessert("Molten Cake", 10, 1, "Delecious clownfish", 3));
+        Restaurant.desserts.add(new Dessert("Tiramisu", 10, 1, "Delicious clownfish", 3));
+        Restaurant.desserts.add(new Dessert("Crème brûlée", 10, 1, "Delicious clownfish", 3));
+        Restaurant.desserts.add(new Dessert("Molten Cake", 10, 1, "Delicious clownfish", 3));
         // Tables
         Restaurant.tables.add(new Table(7));
         Restaurant.tables.add(new Table(2));

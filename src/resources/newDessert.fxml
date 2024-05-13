@@ -36,31 +36,48 @@
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NewDessertController">
     <children>
-        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #C3B1E1;" VBox.vgrow="ALWAYS">
             <children>
                 <Label alignment="CENTER" layoutX="37.0" layoutY="23.0" style="&#10;" text="Frying Nemo" textAlignment="CENTER" wrapText="false">
                     <font>
-                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                        <Font name="Berlin Sans FB Demi Bold" size="21.0" />
                     </font>
                 </Label>
                 <TextField fx:id="descriptionTextField" layoutX="124.0" layoutY="175.0" />
-                <Label layoutX="20.0" layoutY="179.0" text="Description" />
-                <Label layoutX="24.0" layoutY="231.0" text="Price" />
+                <Label layoutX="20.0" layoutY="179.0" text="Description">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+                <Label layoutX="24.0" layoutY="231.0" text="Price">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
                 <TextField fx:id="priceTextField" layoutX="124.0" layoutY="227.0" />
                 <TextField fx:id="itemNameTextField" layoutX="124.0" layoutY="121.0" />
-                <Label layoutX="22.0" layoutY="125.0" text="Item name" />
+                <Label layoutX="22.0" layoutY="125.0" text="Item name">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
                 <ChoiceBox fx:id="sweetnessLevelChoiceBox" layoutX="123.0" layoutY="282.0" prefWidth="150.0" />
-                <Label fx:id="sweetnessLevelLabel" layoutX="20.0" layoutY="286.0" text="Sweetness Level" />
-                <Label layoutX="331.0" layoutY="125.0" text="Stock Quantity" />
+                <Label fx:id="sweetnessLevelLabel" layoutX="20.0" layoutY="286.0" text="Sweetness Level">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+                <Label layoutX="331.0" layoutY="125.0" text="Stock Quantity">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
                 <Label layoutX="257.0" layoutY="52.0" text="Add New Dessert">
                     <font>
-                        <Font name="System Bold" size="14.0" />
+                        <Font name="System Bold" size="15.0" />
                     </font></Label>
                 <TextField fx:id="stockQuantityTextField" layoutX="435.0" layoutY="121.0" />
             <Button fx:id="SubmitNewDessertButton" layoutX="490.0" layoutY="240.0" mnemonicParsing="false" onAction="#addDessert" prefHeight="47.0" prefWidth="94.0" text="Add">
@@ -68,6 +85,16 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Button>
+            <ImageView fitHeight="18.0" fitWidth="28.0" layoutX="11.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@nemo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="159.0" layoutY="22.0" text="®">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
             </children>
         </AnchorPane>
     </children>

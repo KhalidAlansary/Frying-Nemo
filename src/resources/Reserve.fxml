@@ -36,45 +36,72 @@
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Reserve">
     <children>
-        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #C3B1E1;" VBox.vgrow="ALWAYS">
             <children>
                 <Label alignment="CENTER" layoutX="35.0" layoutY="24.0" style="&#10;" text="Frying Nemo" textAlignment="CENTER" wrapText="false">
                     <font>
-                        <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+                        <Font name="Berlin Sans FB Demi Bold" size="21.0" />
                     </font>
                 </Label>
                 <TextField fx:id="firstNameTextField" layoutX="105.0" layoutY="166.0" />
-                <Label layoutX="21.0" layoutY="170.0" text="First Name" />
-                <Label layoutX="22.0" layoutY="222.0" text="Last Name" />
-                <TextField fx:id="lastNameTextField" layoutX="106.0" layoutY="218.0" />
-                <Button fx:id="SubmitBtn" layoutX="269.0" layoutY="314.0" mnemonicParsing="false" onAction="#submit" text="Submit">
+                <Label layoutX="21.0" layoutY="170.0" text="First Name">
                <font>
-                  <Font name="Arial Narrow Bold Italic" size="29.0" />
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+                <Label layoutX="22.0" layoutY="222.0" text="Last Name">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+                <TextField fx:id="lastNameTextField" layoutX="106.0" layoutY="218.0" />
+                <Button fx:id="SubmitBtn" layoutX="275.0" layoutY="321.0" mnemonicParsing="false" onAction="#submit" prefHeight="38.0" prefWidth="76.0" text="Reserve">
+               <font>
+                  <Font name="System Bold" size="14.0" />
                </font></Button>
                 <TextField fx:id="emailTextField" layoutX="105.0" layoutY="116.0" promptText="youremail@example.com" />
-                <Label layoutX="35.0" layoutY="120.0" text="Email" />
+                <Label layoutX="21.0" layoutY="120.0" text="Email">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
                 <ChoiceBox fx:id="tableChoiceBox" layoutX="421.0" layoutY="125.0" prefWidth="150.0" />
-                <Label layoutX="360.0" layoutY="129.0" text="Table no." />
+                <Label layoutX="355.0" layoutY="129.0" text="Table no.">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
                 <Label layoutX="355.0" layoutY="200.0" text="Table Availability:">
                <font>
-                  <Font size="14.0" />
+                  <Font name="System Bold" size="12.0" />
                </font></Label>
                 <Label layoutX="273.0" layoutY="57.0" text="Reservation">
                     <font>
-                        <Font name="System Bold" size="20.0" />
+                        <Font name="System Bold" size="15.0" />
                     </font></Label>
             <Label fx:id="Availability" layoutX="466.0" layoutY="199.0" prefHeight="22.0" prefWidth="87.0" text="----">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Button layoutX="396.0" layoutY="227.0" mnemonicParsing="false" onAction="#availability" text="Check Availability" />
+            <Button layoutX="466.0" layoutY="218.0" mnemonicParsing="false" onAction="#availability" text="Check Availability">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Label layoutX="160.0" layoutY="17.0" text="®">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="22.0" fitWidth="31.0" layoutX="6.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@nemo.png" />
+               </image>
+            </ImageView>
             </children>
         </AnchorPane>
     </children>
