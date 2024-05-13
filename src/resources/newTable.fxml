@@ -50,12 +50,12 @@
                         <Font name="Berlin Sans FB Demi Bold" size="18.0" />
                     </font>
                 </Label>
-                <TextField fx:id="capacityTextField" layoutX="228.0" layoutY="163.0" prefHeight="30.0" prefWidth="194.0" />
-                <Label layoutX="138.0" layoutY="169.0" text="Capacity">
+                <TextField fx:id="capacityTextField" layoutX="223.0" layoutY="162.0" prefHeight="30.0" prefWidth="194.0" />
+                <Label layoutX="124.0" layoutY="167.0" text="Capacity">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font></Label>
-                <Button fx:id="createButton" layoutX="277.0" layoutY="290.0" mnemonicParsing="false" onAction="#addTable" prefHeight="42.0" prefWidth="82.0" text="Create">
+                <Button fx:id="createButton" layoutX="277.0" layoutY="244.0" mnemonicParsing="false" onAction="#addTable" prefHeight="42.0" prefWidth="82.0" text="Create">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></Button>

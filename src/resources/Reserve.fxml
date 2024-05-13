@@ -61,7 +61,7 @@
                   <Font name="System Bold" size="12.0" />
                </font></Label>
                 <TextField fx:id="lastNameTextField" layoutX="106.0" layoutY="218.0" />
-                <Button fx:id="SubmitBtn" layoutX="275.0" layoutY="321.0" mnemonicParsing="false" onAction="#submit" prefHeight="38.0" prefWidth="76.0" text="Reserve">
+                <Button fx:id="SubmitBtn" layoutX="256.0" layoutY="318.0" mnemonicParsing="false" onAction="#submit" prefHeight="38.0" prefWidth="76.0" text="Reserve">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></Button>
@@ -70,12 +70,12 @@
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
-                <ChoiceBox fx:id="tableChoiceBox" layoutX="421.0" layoutY="125.0" prefWidth="150.0" />
-                <Label layoutX="355.0" layoutY="129.0" text="Table no.">
+                <ChoiceBox fx:id="tableChoiceBox" layoutX="431.0" layoutY="166.0" prefWidth="150.0" />
+                <Label layoutX="356.0" layoutY="170.0" text="Table no.">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
-                <Label layoutX="355.0" layoutY="200.0" text="Table Availability:">
+                <Label layoutX="356.0" layoutY="222.0" text="Table Availability:">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Label>
@@ -83,12 +83,12 @@
                     <font>
                         <Font name="System Bold" size="15.0" />
                     </font></Label>
-            <Label fx:id="Availability" layoutX="466.0" layoutY="199.0" prefHeight="22.0" prefWidth="87.0" text="----">
+            <Label fx:id="Availability" layoutX="476.0" layoutY="219.0" prefHeight="22.0" prefWidth="87.0" text="----">
                <font>
                   <Font size="15.0" />
                </font>
             </Label>
-            <Button layoutX="466.0" layoutY="218.0" mnemonicParsing="false" onAction="#availability" text="Check Availability">
+            <Button layoutX="476.0" layoutY="250.0" mnemonicParsing="false" onAction="#availability" text="Check Availability">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font></Button>
@@ -100,6 +100,11 @@
             <ImageView fitHeight="22.0" fitWidth="31.0" layoutX="6.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@nemo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="186.0" fitWidth="307.0" layoutX="460.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fishie.png" />
                </image>
             </ImageView>
             </children>

@@ -77,11 +77,6 @@
                   <Image url="@nemo.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="180.0" fitWidth="232.0" layoutX="408.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@fried.jpeg" />
-               </image>
-            </ImageView>
             <Label fx:id="messageLabel" alignment="CENTER" layoutX="24.0" layoutY="192.0" prefHeight="66.0" prefWidth="371.0" text="Label" textAlignment="CENTER" textFill="#318d00" visible="false">
                <font>
                   <Font size="20.0" />
@@ -106,6 +101,11 @@
                   <Font name="Arial Rounded MT Bold" size="12.0" />
                </font>
             </Label>
+            <ImageView fitHeight="156.0" fitWidth="266.0" layoutX="371.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@fish-plate-cloves-lemon-wallpaper-preview.png" />
+               </image>
+            </ImageView>
       </children>
     </AnchorPane>
   </children>
