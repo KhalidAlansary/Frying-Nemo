@@ -26,7 +26,7 @@ public class NewMainDishController implements Initializable {
     @FXML
     TextField stockQuantityTextField;
 
-    private String[] levels = {"0", "1", "2", "3"};
+    private final String[] levels = {"0", "1", "2", "3"};
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
