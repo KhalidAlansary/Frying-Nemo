@@ -7,10 +7,12 @@ public class Dessert extends MenuItem {
         super(name, price, stockQuantity, description);
         setSweetnessLevel(sweetnessLevel);
     }
+
     @Override
     public String toString() {
-        return name + " "+getPrice()+"LE";
+        return name + " " + getPrice() + "LE";
     }
+
     public int getSweetnessLevel() {
         return sweetnessLevel;
     }

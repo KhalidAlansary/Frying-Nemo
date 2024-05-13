@@ -7,10 +7,12 @@ public class MainDish extends MenuItem {
         super(name, price, stockQuantity, description);
         setSpicinessLevel(spicinessLevel);
     }
+
     @Override
     public String toString() {
-        return name + " "+getPrice()+"LE";
+        return name + " " + getPrice() + "LE";
     }
+
     public int getSpicinessLevel() {
         return spicinessLevel;
     }
