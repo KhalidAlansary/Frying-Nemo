@@ -6,17 +6,17 @@ public class Order {
     private ArrayList<MenuItem> items;
     private Customer customer;
 
+    public Order(Customer custumer) {
+        items = new ArrayList<>();
+        this.customer = custumer;
+    }
+
     public Customer getCustomer() {
         return customer;
     }
 
     public void setCustomer(Customer customer) {
         this.customer = customer;
-    }
-
-    public Order(Customer custumer) {
-        items = new ArrayList<>();
-        this.customer = custumer;
     }
 
     public void addItem(MenuItem item) {
