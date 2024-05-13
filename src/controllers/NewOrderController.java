@@ -14,8 +14,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import entities.MenuItem;
-
 public class NewOrderController implements Initializable {
     @FXML
     ChoiceBox<Customer> customerChoiceBox;
