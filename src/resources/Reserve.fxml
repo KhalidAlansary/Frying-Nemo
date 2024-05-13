@@ -102,9 +102,9 @@
                   <Image url="@nemo.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="186.0" fitWidth="307.0" layoutX="460.0" layoutY="-25.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="186.0" fitWidth="307.0" layoutX="441.0" layoutY="-14.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@fishie.png" />
+                  <Image url="@fish.png" />
                </image>
             </ImageView>
             </children>

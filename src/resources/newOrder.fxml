@@ -103,7 +103,7 @@
             </Label>
             <ImageView fitHeight="196.0" fitWidth="372.0" layoutX="523.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@seafood-cuisine-dish-food-plate-top-view-isolated-white-background_9493-20026.png" />
+                  <Image url="@shrimp.png" />
                </image>
             </ImageView>
       </children>
