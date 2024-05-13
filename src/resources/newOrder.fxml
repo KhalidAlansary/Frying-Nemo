@@ -46,12 +46,12 @@
   <children>
     <AnchorPane fx:id="customerAnchorPane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #C3B1E1;" VBox.vgrow="ALWAYS">
       <children>
-        <Label alignment="CENTER" layoutX="462.0" layoutY="106.0" style="&#10;" text="Customer" textAlignment="CENTER" textFill="#700f0f" wrapText="false">
+        <Label alignment="CENTER" layoutX="456.0" layoutY="81.0" style="&#10;" text="Customer" textAlignment="CENTER" textFill="#700f0f" wrapText="false">
           <font>
             <Font name="Cambria Bold" size="22.0" />
           </font>
         </Label>
-            <ChoiceBox fx:id="customerChoiceBox" layoutX="462.0" layoutY="159.0" prefWidth="150.0" />
+            <ChoiceBox fx:id="customerChoiceBox" layoutX="456.0" layoutY="131.0" prefWidth="150.0" />
             <Label layoutX="34.0" layoutY="120.0" text="Main Dish" textFill="#700f0f">
                <font>
                   <Font name="Cambria Bold" size="20.0" />
@@ -64,28 +64,28 @@
                   <Font name="Cambria Bold" size="20.0" />
                </font>
             </Label>
-            <Button layoutX="523.0" layoutY="312.0" mnemonicParsing="false" onAction="#makeOrder" prefHeight="49.0" prefWidth="150.0" text="Make Order">
+            <Button layoutX="546.0" layoutY="317.0" mnemonicParsing="false" onAction="#makeOrder" prefHeight="49.0" prefWidth="150.0" text="Make Order">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Button>
-            <Label layoutX="462.0" layoutY="225.0" text="Total:" textFill="#700f0f">
+            <Label layoutX="456.0" layoutY="211.0" text="Total:" textFill="#700f0f">
                <font>
                   <Font name="Cambria Bold" size="20.0" />
                </font>
             </Label>
-            <Label fx:id="total" layoutX="538.0" layoutY="223.0" prefHeight="28.0" prefWidth="46.0" text="-----">
+            <Label fx:id="total" layoutX="531.0" layoutY="209.0" prefHeight="28.0" prefWidth="46.0" text="-----">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <Button layoutX="538.0" layoutY="251.0" mnemonicParsing="false" onAction="#getTotal" text="Get Total">
+            <Button layoutX="520.0" layoutY="251.0" mnemonicParsing="false" onAction="#getTotal" text="Get Total">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
             <Spinner fx:id="dessertSpinner" layoutX="197.0" layoutY="291.0" prefHeight="26.0" prefWidth="68.0" />
-            <Spinner fx:id="mainDishSpinner" layoutX="197.0" layoutY="159.0" prefHeight="26.0" prefWidth="68.0" />
+            <Spinner fx:id="mainDishSpinner" editable="true" layoutX="197.0" layoutY="159.0" prefHeight="26.0" prefWidth="68.0" />
             <Label alignment="CENTER" layoutX="-48.0" layoutY="10.0" prefHeight="77.0" prefWidth="314.0" style="&#10;" text="Frying Nemo" textAlignment="CENTER" wrapText="false">
                <font>
                   <Font name="Berlin Sans FB Demi Bold" size="24.0" />

@@ -36,13 +36,17 @@ public class NewOrderController implements Initializable {
         customerChoiceBox.setItems(FXCollections.observableArrayList(Restaurant.customers));
         mainDishChoiceBox.setItems(FXCollections.observableArrayList(Restaurant.mainDishes));
         dessertChoiceBox.setItems(FXCollections.observableArrayList(Restaurant.desserts));
+        SpinnerValueFactory<Integer> valueFactory1=
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10);
+        valueFactory1.setValue(1);
+        dessertSpinner.setValueFactory(valueFactory1);
+        SpinnerValueFactory<Integer> valueFactory2 =
+                new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10);
+        valueFactory2.setValue(1);
+        mainDishSpinner.setValueFactory(valueFactory2);
     }
 
-    public void initialize() {
-        int maxStock = MenuItem.getStockQuantity();
-        dessertSpinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(0, maxStock, 0));
-        dessertSpinner.getValueFactory().setValue(0);
-    }
+
 
     @FXML
     void getTotal(ActionEvent event) {
